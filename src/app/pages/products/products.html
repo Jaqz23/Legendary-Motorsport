@@ -1,0 +1,28 @@
+<section class="products-page">
+  <div class="products-container">
+
+    <div class="products-header">
+      <div class="products-header-text">
+        <h1>Nuestros Productos</h1>
+        <p>Explora nuestra colección exclusiva de vehículos deportivos de alto rendimiento.</p>
+      </div>
+    </div>
+
+    <div class="products-grid">
+      @for (producto of productos; track producto.id) 
+      {
+        <article class="product-card">
+          <div class="product-image">
+            <img [src]="producto.imagen" [alt]="producto.nombre">
+          </div>
+          <div class="product-info">
+            <h2>{{ producto.nombre }}</h2>
+            <p>{{ producto.descripcion }}</p>
+            <span class="product-price">${{ producto.precio | number }}</span>
+          </div>
+        </article>
+      }
+    </div>
+
+  </div>
+</section>

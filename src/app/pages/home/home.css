@@ -1,0 +1,87 @@
+
+.hero {
+  background-color: #0f0f1a;
+  padding-top: 4rem;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.hero-text h1 span {
+  color: #e94560;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #aaa;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 -8px 30px rgba(233, 69, 96, 0.15);
+}
+
+/* FEATURES */
+.features {
+  background-color: #1a1a2e;
+  padding: 3rem 2rem;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background-color: #0f0f1a;
+  border: 1px solid #2a2a3e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  border-color: #e94560;
+}
+
+.feature-card span {
+  font-size: 2.2rem;
+}
+
+.feature-card h3 {
+  color: #fff;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.feature-card p {
+  font-size: 0.875rem;
+  color: #888;
+  line-height: 1.6;
+}

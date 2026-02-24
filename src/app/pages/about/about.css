@@ -1,0 +1,76 @@
+.about {
+  padding: 3rem 2rem;
+  background-color: #0f0f1a;
+  color: #ccc;
+  min-height: calc(100vh - 128px);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-hero img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 380px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.about-hero-text h1 {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.about-hero-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #aaa;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.value-card {
+  background-color: #1a1a2e;
+  border: 1px solid #2a2a3e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  border-color: #e94560;
+}
+
+.value-card span {
+  font-size: 2rem;
+}
+
+.value-card h3 {
+  color: #fff;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.value-card p {
+  font-size: 0.875rem;
+  color: #888;
+  line-height: 1.6;
+}
